@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HomeLayout</title>
+	<link rel="stylesheet" href="styleh.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://kit.fontawesome.com/8f65deafa9.js" crossorigin="anonymous"></script>
+   <style type="text/css">
+   	#notification{
+   		background-color: beige;
+   		width: 28.33%;
+   		float: right;
+   		height: 600px;
+   		font-size: 30PX;
+   		word-spacing: 5px;   
+   	}
+
+   	#filter{
+   		background-color: beige;
+   		width: 27.33%;
+   		float: left;
+   		height: 600px;
+   	}
+    #slide{
+    	background-color: rosybrown;
+    	width: 60%;
+    	margin: 0 auto;
+    	height: 600px;
+    }
+    #some{
+    	background-color: teal;
+    	width: 100%;
+    	height: 70px;
+    	clear: both;
+    	margin: 0 auto;
+    }
+
+
+   </style>
+
+</head>
+<body>
+	
+		<h1 align="center" >WEBPAGE CREATION</h1>
+
+		<div id="slidenav" class="slidenav">
+	      
+	      	<a href="javascript:void(0)" class="closeicon" id="closeicon" onclick="closnav()">&times;</a>
+			<a href="#">HOME</a>
+			<a href="#">EXAM</a>
+			<a href="#">BRANCH</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+
+
+
+		<div class="navbar">
+
+				<div class="logo">
+						<a href=""><img id="image" src="college.jpg" width="120px" title="RGUKT NUZVID" ></a>
+				</div>
+
+				<ul>
+					<li class="active"><a href="labwebpage.html"><i class='bx bx-home' ></i> HOME</a></li>
+					<li><a href="#"><i class='bx bxs-inbox bx-rotate-180' ></i> EXAM</a></li>
+					<li><a href="#"><i class='bx bx-wrench'></i></i> BRANCH</a>
+
+						<div class="sub-menu">
+						<ul>
+			
+								<li class="hover-me"><a href="#">CSE</a><i class="fa fa-angle-right"></i>
+
+								 	<div class="sub-menu2">
+								 		<ul>
+								 				<li><a href="loginpage.html">Faculty</a></li>
+								 				<li> <a href="loginpage.html">Student</a></li>
+								 		</ul>
+								 	</div>
+								 </li>
+								<li><a href="#">ECE</a></li>
+								<li><a href="#">MECH</a></li>
+						</ul>
+						</div>
+					</li>
+
+					<li><a href="#"><i class='bx bxs-phone-call' ></i>CONTACT</a>
+						<div class="contact">
+							<ul>
+							<li><a href="#">9999999999</a><i class="fa fa-angle-right"></i>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30558.62420307909!2d80.82703811339839!3d16.785229560280676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675cbf6a62db3%3A0x342925c018a01e74!2sNuzividu%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1657454210782!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								
+							</li>
+
+							<li><a href="#">9876543210</a></li>
+							<li><a href="#">9123456789</a></li>
+							</ul>
+						</div>
+					</li>
+						
+			 	</ul>
+			</div>
+
+		
+		<div id="notification" >
+			<marquee >NOTIFICATION</marquee>
+			
+		 <div class="top"> 
+			<li ><a href="https://examcell.rguktn.ac.in/results/202021_18E1_S2_Reg/"><i class='bx bxs-bell' ></i>Results of second semester		</a></li><br>
+			
+			<li><a href="https://examcell.rguktn.ac.in/"><i class='bx bxs-bell' ></i><small>Examination cell</small></a></li><br>
+		    <li><a href="https://intranet.rguktn.ac.in/SMS/"><i class='bx bxs-bell' ></i><small>online student board</small></a></li><br>		
+		    <li><a href="https://rguktn.ac.in/"><i class='bx bxs-bell' ></i><small>About RGUKT campus</small> </a></li>
+		 </div> 
+          
+		
+		
+		</div>
+		<div id="filter">
+			<form action="method">
+					date:<input type="date" name="" value="">
+			</form>
+		</div>
+		<div id="slide">
+			<form action="\angel.php" method="post" onsubmit="return validation();">
+				<center>	
+					<br><br><br><big><b>User Name:</b></big>
+					<input type="text" name="userId" placeholder="Enter Id" id="username"><br><br>
+					<big><b>Password:</b></big>
+					<input type="Password" name="Password" placeholder="enter password" id="password"><br><br>
+					<button type="button" onclick="validation();"  id="login"> Submit
+				</center>
+
+			</form>
+		</div>
+		<div id="some">
+			<center>	
+				<hr>
+	 					@copy designed by ANGEL VIPPARTHI..
+				</hr></center>
+		</div>
+
+
+  <script>
+  	function opennav()
+  	{
+  		document.getElementById("slidenav").style.width="175px";
+
+  		document.getElementById("menuicon").style.display="none";
+
+  	}
+  	function closnav()
+  	{
+
+  		document.getElementById("slidenav").style.width="0";
+
+  		document.getElementById("slidenav").style.display="block";
+  	}
+
+  	let c=0;
+    function validation()
+        {
+            var r1=/^(N|n)18(0|1)\d{3}$/;
+            var r2=/^[A-Z][a-z][0-9][A-Z][a-z]$/;
+            var v1=document.getElementById("username").value;
+            if(!r1.test(v1)){
+                alert("Invalid user");
+                return false;
+                c++;
+            }
+            var v2=document.getElementById("password").value;
+            if(!r2.test(v2)){
+                alert("Invalid user id please enter id as:N18XXX");
+                return false;
+                c++;
+            }
+            if(c==0)
+            {
+                alert("Valid user");
+	            var sub=confirm("Are you sure submitting the form?");
+	            if(!sub)
+	            {
+	                return false;
+	            }
+	            else{
+	                return true;
+	            }   
+            }
+            else{
+                alert("Invalid user");
+            }
+        }
+
+  </script>
+
+</body>
+</html>
